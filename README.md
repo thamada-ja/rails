@@ -14,6 +14,7 @@ Things you may want to cover:
 
 * Database creation
 おっぱいデータベース
+閉店しました
 * Database initialization
 
 * How to run the test suite
