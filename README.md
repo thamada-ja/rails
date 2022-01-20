@@ -6,15 +6,13 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
-3.0.3
 
 * System dependencies
 
 * Configuration
 
 * Database creation
-おっぱいデータベース
-閉店しました
+
 * Database initialization
 
 * How to run the test suite
