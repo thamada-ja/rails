@@ -3,7 +3,6 @@ class CreateTestdbs < ActiveRecord::Migration[7.0]
     create_table :testdbs do |t|
       t.string :uuid
       t.string :name
-
       t.timestamps
     end
   end

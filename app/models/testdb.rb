@@ -1,2 +1,3 @@
 class Testdb < ApplicationRecord
+
 end
