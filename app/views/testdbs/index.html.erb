@@ -11,10 +11,10 @@
   </head>
 
   <body>
-    <%= yield %>
     <% @testdbs.each do |testdb| %>
     <%= testdb.uuid %>
     <%= testdb.name %>
     <% end %>
+    <%= yield %>
   </body>
 </html>

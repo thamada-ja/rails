@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   resources :testdbs
   # DBを表示する
-  root 'testdbs#index'
+  get "test" => "testdbs#index"
+
+  # home/topをtopとして表示する
+  get "top" => "home#top"
+  get "about" => "home#about"
 
   # hello,world!を表示する
   # root 'application#hello'
