@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   # home/topをtopとして表示する
   get "top" => "home#top"
   get "about" => "home#about"
+  get "home/register" => "home#register"  
+  get "posts" => "posts#index"
 
   # hello,world!を表示する
   # root 'application#hello'
