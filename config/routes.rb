@@ -11,7 +11,9 @@ Rails.application.routes.draw do
   get "top" => "home#top"
   get "about" => "home#about"
   get "item" => "home#item"
-
+  get "home/register" => "home#register"  
+  get "posts" => "posts#index"
+  post "user_create" => "user#user_create"
   # hello,world!を表示する
   # root 'application#hello'
   

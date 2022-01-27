@@ -5,4 +5,6 @@ class HomeController < ApplicationController
   end
   def item
   end
+  def register
+  end
 end
