@@ -1,6 +1,6 @@
 <h1>DB登録テスト</h1>
-<form action="create">
-<label for="content">送信内容</label>
-<input type="text">
-<button type="submit">送信</button>
-</form>
+<%= form_tag("/user_create") do %>
+<p>投稿内容</p>
+<input type="text" name="content"></input>
+<button type="submit">登録</button>
+<% end %>
