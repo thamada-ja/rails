@@ -1,14 +1,5 @@
 version: "3"
 services:
-  db:
-    image: postgres
-    volumes:
-      - psgl_data:/var/lib/postgresql/data
-    environment:
-      POSTGRES_USER:
-      POSTGRES_PASSWORD:
-    ports:
-      - 5433:5432
   web:
     build:
       context: .
@@ -22,5 +13,14 @@ services:
       - "3000:3000"
     volumes:
       - .:/app_name
+  db:
+    image: postgres
+    volumes:
+      - psgl_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: root
+    ports:
+      - 5433:5432
 volumes:
   psgl_data:
