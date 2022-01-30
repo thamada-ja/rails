@@ -1,0 +1,16 @@
+<h1>ボード編集</h1>
+<%= form_with(model: @board, url: "/boards/#{@board.id}", method: :patch) do |f| %>
+    <%# nameの項目 %>
+    <div>
+        <%= f.label :name %><br>
+        <%= f.text_field :name %>
+    </div>
+    <%# descriptionの項目 %>
+    <div>
+        <%= f.label :description %><br>
+        <%= f.text_area :description %>
+    </div>
+    <%# 登録ボタン %>
+    <div><%= f.submit %></div>
+<% end %>
+<%= link_to '戻る', boards_path %>

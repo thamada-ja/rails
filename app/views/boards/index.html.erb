@@ -10,8 +10,9 @@
         <tr>
             <td>Name：<%= board.name %></td>
             <td>説明：<%= board.description %></td>
+            <td><%= link_to '編集', edit_board_path(board) %></td>
             <%# method: delete を使用する場合、rails-ujs などを使用するか、button_to で代替え, link_to だと GET使えと怒られる %>
-            <td><%= button_to 'Delete', "/boards/#{board.id}", :method => :delete %></td>
+            <td><%= button_to '削除', "/boards/#{board.id}", :method => :delete %></td>
         </tr>
     <% end %>
     </tbody>
