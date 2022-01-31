@@ -1,7 +1,10 @@
 class BoardsController < ApplicationController
     def index
         @boards = Board.all
-        # 一覧ページで登録
+    end
+
+    # 新規作成
+    def new
         @board = Board.new
     end
 
@@ -10,23 +13,26 @@ class BoardsController < ApplicationController
         redirect_to boards_path
     end
 
+    # 編集
     def edit
         @board = Board.find(params[:id])
     end
 
+    # 更新
     def update
         @board = Board.find(params[:id])
         @board.update(board_params)
         redirect_to boards_path
     end
 
+    # 削除
     def destroy
         @board = Board.find(params[:id])
         @board.destroy
         redirect_to boards_path
     end
 
-    # createで使用するパラメータを定義
+    # パラメータ定義
     private
         # permitで、フォームで設定している値を設定
         def board_params
