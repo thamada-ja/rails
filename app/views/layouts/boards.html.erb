@@ -10,9 +10,12 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <%= render 'layouts/header' %>
+  <%= render 'layouts/common/header' %>
 
   <body>
     <%= yield %>
   </body>
+
+  <%= render 'layouts/common/footer' %>
+
 </html>

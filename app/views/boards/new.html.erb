@@ -1,16 +1,16 @@
 <h2>ボードの追加</h2>
 <%= form_with model: @board do |f| %>
-    <%# nameの項目 %>
-    <div>
-        <%= f.label :name %><br>
-        <%= f.text_field :name %>
-    </div>
-    <%# descriptionの項目 %>
-    <div>
-        <%= f.label :description %><br>
-        <%= f.text_area :description %>
-    </div>
-    <%# 登録ボタン %>
-    <div><%= f.submit %></div>
+  <%# nameの項目 %>
+  <div>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <%# descriptionの項目 %>
+  <div>
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <%# 登録ボタン %>
+  <div><%= f.submit %></div>
 <% end %>
 <%= link_to '戻る', boards_path %>
